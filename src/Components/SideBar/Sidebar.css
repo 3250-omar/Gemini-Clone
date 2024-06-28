@@ -1,0 +1,60 @@
+.sideBar{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f0f4f9;
+    padding: 25px  ;
+}
+.sideBar .icon{
+    width: 20px;
+    height: 20px;
+}
+.sideBar .menu {
+    cursor: pointer;
+    display: block;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+.sideBar .newChat{
+    margin-top: 10px;
+    display: inline-flex;
+    justify-self: center;
+    align-items: center;
+    gap: 10px;
+    padding : 10px;
+    background-color: #e6eaf1;
+    border-radius: 50px;
+    color: gray;
+    cursor: pointer;
+}
+
+/*Recent Chats*/
+.sideBar .recent{
+    display: flex;
+    flex-direction: column;
+    animation: loading-page 1s ease-in-out forwards;
+    .recent-title{
+        margin: 20px 0;
+    }
+
+}
+.recent-entry{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    padding: 10px;   
+    border-radius: 40px;
+    color: #282828;
+    /*Hover Effect on the entry*/
+    &:hover{
+        background-color: #e2e6eb;
+    }
+    
+}
+@media (max-width:600px) {
+    .sideBar{
+        display: none;
+    }
+}
